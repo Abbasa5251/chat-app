@@ -5,7 +5,7 @@ type Props = { size?: number };
 
 function LoadingLogo({ size = 100 }: Props) {
 	return (
-		<div className="h-screen w-screen flex items-center justify-center">
+		<div className="h-full w-full flex items-center justify-center">
 			<Loader2 size={size} className="animate-spin" />
 		</div>
 	);
