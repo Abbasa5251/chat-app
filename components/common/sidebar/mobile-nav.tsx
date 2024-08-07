@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../../ui/tooltip";
 import { Button } from "../../ui/button";
 import { useConversation } from "@/hooks/useConversation";
+import { ThemeToggle } from "../theme-toggle";
 
 function MobileNav() {
 	const paths = useNavigation();
@@ -39,6 +40,9 @@ function MobileNav() {
 							</Link>
 						</li>
 					))}
+					<li>
+						<ThemeToggle />
+					</li>
 					<li>
 						<UserButton />
 					</li>
